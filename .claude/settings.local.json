@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create vite@latest:*)",
+      "Bash(pnpm install)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

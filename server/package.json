@@ -1,0 +1,33 @@
+{
+  "name": "ai-recognition-server",
+  "version": "1.0.0",
+  "description": "AI 图像识别服务器 - 使用腾讯云 API",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "pm2": "pm2 start index.js --name ai-recognition"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "body-parser": "^1.20.2",
+    "tencentcloud-sdk-nodejs": "^4.0.689",
+    "dotenv": "^16.3.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2",
+    "pm2": "^7.3.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "ai",
+    "image-recognition",
+    "tencentcloud",
+    "express"
+  ],
+  "author": "",
+  "license": "MIT"
+}

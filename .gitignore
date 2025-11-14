@@ -1,0 +1,25 @@
+# 微信小程序相关
+.miniprogram_npm/
+.cloudfunctions/
+node_modules/
+.env
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 操作系统
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 临时文件
+*.tmp
+*.temp

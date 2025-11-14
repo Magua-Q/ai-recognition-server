@@ -1,0 +1,10 @@
+.controls {
+  display: flex;
+  flex-direction: column;
+  gap: 20rpx;
+  margin: 30rpx 0;
+}
+
+.camera-placeholder text:first-child {
+  font-size: 120rpx;
+}

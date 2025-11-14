@@ -1,0 +1,12 @@
+{
+  "name": "classify",
+  "version": "1.0.0",
+  "description": "AI 图像识别云函数",
+  "main": "index.js",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
+    "@tensorflow-models/mobilenet": "^2.1.1",
+    "@tensorflow/tfjs-node": "^4.22.0",
+    "wx-server-sdk": "~3.0.1"
+  }
+}
