@@ -117,7 +117,7 @@ Page({
   async callRecognitionAPI(imageBase64) {
     return new Promise((resolve, reject) => {
       wx.request({
-        url: 'https://ai-recognition-server.vercel.app/api/recognize', // 替换为你的服务器地址
+        url: 'https://ai-recognition-server-vercel-7bfh.vercel.app/api/recognize', // 替换为你的服务器地址
         method: 'POST',
         header: {
           'Content-Type': 'application/json'
