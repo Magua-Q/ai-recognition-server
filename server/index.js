@@ -6,7 +6,10 @@
 const express = require('express')
 const cors = require('cors')
 const bodyParser = require('body-parser')
+
+// 正确导入腾讯云 SDK
 const tencentcloud = require('tencentcloud-sdk-nodejs')
+const DetectLabelRequest = require('tencentcloud-sdk-nodejs/im/v20190311/DetectLabelRequest')
 
 const app = express()
 const port = process.env.PORT || 3000
@@ -17,9 +20,9 @@ app.use(bodyParser.json({ limit: '10mb' })) // 允许上传大图片
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }))
 
 // 初始化腾讯云客户端
-const { ImageRecognizerClient, DetectLabelRequest } = tencentcloud.im.v20190311
+const ImClient = tencentcloud.im.v20190311.Client
 
-const client = new ImageRecognizerClient({
+const client = new ImClient({
   credential: {
     secretId: process.env.TENCENT_SECRET_ID || 'YOUR_SECRET_ID',
     secretKey: process.env.TENCENT_SECRET_KEY || 'YOUR_SECRET_KEY',
